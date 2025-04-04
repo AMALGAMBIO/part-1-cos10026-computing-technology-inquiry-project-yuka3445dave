@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Car Form</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Lab 10">
+    <meta name="keywords" content="PHP, MySQL, Insert">
+    <link rel="stylesheet" href="addcar.css" type="text/css">
+</head>
+<body>
+    <h1>Lab10 - Add New Car</h1>
+    
+    <form action="cars_add.php" method="post">
+        <fieldset>
+            <legend>New Car Details</legend>
+            <p class="row">
+                <label for="carmake">Car Make: </label>
+                <input type="text" name="carmake" id="carmake" required>
+            </p>
+            <p class="row">
+                <label for="carmodel">Car Model: </label>
+                <input type="text" name="carmodel" id="carmodel" required>
+            </p>
+            <p class="row">
+                <label for="price">Price ($): </label>
+                <input type="number" step="0.01" name="price" id="price" required>
+            </p>
+            <p class="row">
+                <label for="yom">Year of Manufacture: </label>
+                <input type="number" name="yom" id="yom" min="1886" max="2025" required>
+            </p>
+            <p>
+                <input type="submit" value="Add New Car">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

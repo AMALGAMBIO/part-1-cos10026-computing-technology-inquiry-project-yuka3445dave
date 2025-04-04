@@ -1,0 +1,93 @@
+/*
+filename: [LE TIEN DUNG]
+author: [LE TIEN DUNG]
+created: [28/2/2025]
+last modified: [28/2/2025]
+description: [lab05.html]
+*/
+@media (max-width: 768px) {
+        header h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            line-height: 1.3;
+        }
+    }
+    
+aside:hover {display: block; }
+.menu ul li{display: inline-block;}
+nav {
+        display: flex;
+        justify-content: center;  
+        gap: 10px;  
+    }
+
+.menu a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        display: block;  /* Ensures full area is clickable */
+        padding: 10px 15px;
+    }
+    
+    
+nav ul {list-style: none;}
+
+aside{ border: 4px inset purple;
+       border-radius: 14px;
+       width: 30%;
+       margin: 1em;
+       padding: 1em;
+       background:url(./images/fade.jpg) repeat-x top left;
+       box-shadow: 10px 10px 5px #aaaaaa;
+     }
+header h1 {
+        font-size: clamp(1.5rem, 5vw, 3rem); 
+        text-align: center;
+        white-space: normal; 
+        word-wrap: break-word; 
+        line-height: 1.2; 
+        margin: 0 auto;
+    }
+    
+header {
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+        background-color: lightgray;
+    }
+    
+ 
+
+footer{border-top: 4px double  red; 
+        clear: both;
+       }
+
+     
+#lists {
+        float: left;
+        }
+#tables table { margin: auto;}        
+#tables {margin: auto;
+         float: right;
+        }
+
+#hyperlinks {clear: both ;
+             float: left;
+            }
+#images {float: right;
+              
+        }   
+figure{border: 2px solid #ccc;}         
+
+#lists, #images, #tables, #hyperlinks {
+    width: 50%; 
+    text-align: center;  }
+ol, ul, dl {text-align: left;}
+
+article {min-width: 30em;}
+
+footer p {display: inline-block; width: 33%; }
+
+footer p:first-child {float: left; }
+footer p:nth-child(2) {text-align: center; }
+footer p:last-child {float: right; text-align: right}

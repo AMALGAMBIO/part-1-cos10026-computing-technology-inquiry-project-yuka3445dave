@@ -1,0 +1,91 @@
+/*
+filename: [LE TIEN DUNG]
+author: [LE TIEN DUNG]
+created: [28/2/2025]
+last modified: [28/2/2025]
+description: [lab05.html]
+*/
+
+body{
+	font-family: arial;
+}
+
+article{
+	max-width: 1220px;
+	margin: 0 auto;
+}
+
+header {
+    background-image: url('/styles/images/background.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center bottom; 
+    height: 160px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header h1 {
+    font-family: 'Love Ya Like A Sister', Arial, sans-serif;
+    color: black; 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); 
+    font-size: clamp(2rem, 5vw, 4rem); 
+    margin: 0;
+}
+
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	list-style: none;
+	float: left;
+	font-size: 93%;
+}
+
+nav ul li a{
+	display: block;
+	font-weight: bold;
+	padding: .625em 3.5em;
+	text-decoration: none;
+	color: #000;
+	border-right: 1px solid #bababa;
+}
+
+img{
+	max-width: 100%
+}
+
+#section1, #section2, #section3{
+	float: left;
+	width: 30%;
+	text-align: justify;
+	margin: 1em 1em 1em 1em;
+}
+
+footer{
+	clear: both;
+}
+
+footer h3{
+	font-family: 'Love Ya Like A Sister', arial;
+	background-color: #94d4ff;
+	padding: .5em 0 .5em .5em;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+@media (max-width: 768px) {
+    #section1, #section2, #section3 {
+        width: 100%;
+        float: none;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+}

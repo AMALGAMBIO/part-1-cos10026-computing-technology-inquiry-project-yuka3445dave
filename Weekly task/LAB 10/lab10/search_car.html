@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="COS10026 Lab 10">
+    <meta name="author" content="LE TIEN DUNG">
+    <title>Search Car Form</title>
+</head>
+<body>
+    <h1>Lab10 Search Car Form</h1>
+    
+    <form method="post" action="cars_search.php">
+        <fieldset>
+            <legend>Search Car Details</legend>
+            <p class="row">
+                <label for="carmake">Car Make:</label>
+                <input type="text" name="carmake" id="carmake">
+            </p>
+            <p class="row">
+                <label for="carmodel">Car Model:</label>
+                <input type="text" name="carmodel" id="carmodel">
+            </p>
+            <p class="row">
+                <label for="price">Max Price ($):</label>
+                <input type="number" name="price" id="price" min="0">
+            </p>
+            <p class="row">
+                <label for="yom">Year of Manufacture:</label>
+                <input type="number" name="yom" id="yom" min="1886" max="2025">
+            </p>
+            <p>
+                <input type="submit" value="Search">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
